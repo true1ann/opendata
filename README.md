@@ -1,3 +1,3 @@
-# aliucord
+# opendata
 
-personal files for aliucord.
+Reposity for hot-linking my small stuff
