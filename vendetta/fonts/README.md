@@ -1,7 +1,6 @@
 # Fonts
 
-fonts are constructed using this, easy json:
-
+fonts packs are made using this structure:
 ```json
 {
   "spec": 1,
@@ -29,18 +28,21 @@ fonts are constructed using this, easy json:
   }
 ```
 
-so, explanations:
+## JSON root
 * `spec` - _no description_
 * `name` - any, name of the font pack
 * `previewText` - any(?), text to preview the pack with
 (may be inacurrate / didnt tested yet)
 
-How to change the fonts?
-> The JSON I gave you above, has all (as of current date) fonts Discord use. So just append the links to your .ttf in the empty fields, and remove all others which dont have a font / which you dont want to replace
-Explanation of the JSON was provided by Nexx Pid from Revenge-mod Discord server
-
-What fonts do what?
+## JSON fonts
 * `ABCGintoNord-ExtraBold` - Header (eg Uh oh. / Crash header)
 * `ggsans-*` - Default Discord font
-* `NotoSans-*` - _no description_
+* `NotoSans-*` - Default ***Internationl*** font (e.g. Russian)
 * `SourceCodePro-Semibold` - Monospace fomt (eg codeblocks)
+
+# Information
+The JSON above has all (as of date when this file was changed) fonts Discord use. So just add the links to your .ttf files in the empty fields, and remove all others which you dont want to replace
+> Explanation of the JSON was provided by Nexx from Revenge-mod Discord server, reworked by me
+
+All paths to fonts ***MUST*** be an URL, ***you cannot use a local path, SFTP server path and such. only http:// OR https:// resources are supported.***
+> Explanation of path links, added due to misunderstanding in the Revenge-mod Discord server
